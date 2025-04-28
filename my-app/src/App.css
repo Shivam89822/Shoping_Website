@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+#itemsSearching{
+  display: flex;
+}
+.logBox{
+  display: flex;
+  justify-content: center;
+}
+

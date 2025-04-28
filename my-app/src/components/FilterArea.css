@@ -1,0 +1,131 @@
+/* Main Filter Box */
+#filterBox {
+  width: 270px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.114);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  position: sticky;
+  top: 150px;
+  /* border: 2px solid red; */
+  margin: 15px;
+}
+
+/* Section Titles */
+.filterItem h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #00b2bd;
+  text-align: center;
+}
+
+/* Individual Sections */
+.filterItem {
+  margin-bottom: 20px;
+}
+
+/* Availability */
+#avText {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Checkbox Row */
+.filterAv {
+  display: block;
+  margin: 8px 0;
+  text-align: left;
+}
+
+.filterAv label {
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Custom Checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #09c0a1;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #09c0a1;
+  border-color: #09c0a1;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Price & Rating */
+.priceSort,
+.ratingSort {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin: 10px 0 8px;
+  text-align: left;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #09c0a1;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+/* Rating Numbers */
+.ratingSort span {
+  font-size: 14px;
+  color: #555;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+/* Max Price Label */
+.priceSort:last-child {
+  color: #09c0a1;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Apply Button */
+#changeBtn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-image: linear-gradient(91.7deg, #00b2bd .51%, #09c0a1 68.87%);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#changeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 178, 189, 0.3);
+}
